@@ -1,0 +1,7 @@
+{
+  "name": "MemorIApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

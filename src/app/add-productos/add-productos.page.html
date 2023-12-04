@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="background-image"></div>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-img src="../../assets/logo.png" style="display: block; margin: 0 auto; width: 200px; padding: 20px;"></ion-img>
+    <ion-buttons slot="end">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-item>
+    <ion-label position="fill">Nombre</ion-label>
+    <ion-input [(ngModel)]="nuevoProducto.nombre" name="nombreProducto" type="text" required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="fill">Descripcion</ion-label>
+    <ion-input [(ngModel)]="nuevoProducto.descripcion" name="nombreProducto" type="text" required></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="fill">Precio</ion-label>
+    <ion-input [(ngModel)]="nuevoProducto.precio" name="cantidadProducto" type="text" required></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="fill">Cantidad</ion-label>
+    <ion-input [(ngModel)]="nuevoProducto.cantidad" name="cantidadProducto" type="text" required></ion-input>
+  </ion-item>
+
+
+  <ion-button expand="full" (click)="regitroProducto()">Añadir Memorial</ion-button>
+  <ion-item routerLink="/menu">
+    <ion-button  expand="block" fill="outline" style="width: 100%;">     
+      Ir al menu principal
+    </ion-button>
+  </ion-item>
+</ion-content>

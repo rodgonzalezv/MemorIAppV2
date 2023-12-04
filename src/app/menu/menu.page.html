@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="background-image"></div>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-img src="../../assets/logo.png" style="display: block; margin: 0 auto; width: 200px; padding: 20px;"></ion-img>
+    <ion-buttons slot="end">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+  <br><br>
+
+  <ion-item routerLink="/mapa">
+    <ion-button  expand="block" fill="clear" style="width: 100%;">
+      <ion-img src="../../assets/gps.png" alt="logo" style="width:64px;"></ion-img>
+      <p style="font-size: medium;">&nbsp;&nbsp;Ver Memoriales en el mapa</p>
+    </ion-button>
+  </ion-item>
+
+  <ion-item routerLink="/gps">
+    <ion-button  expand="block" fill="clear" style="width: 100%;">
+      <ion-img src="../../assets/pin.png" alt="logo" style="width:64px;"></ion-img>
+      <p style="font-size: medium;">&nbsp;&nbsp;Geolocalizar memorial</p>
+    </ion-button>
+  </ion-item>
+
+  <ion-item routerLink="/camara">
+    <ion-button  expand="block" fill="clear" style="width: 100%;">
+      <ion-img src="../../assets/camara.png" alt="logo" style="width:64px;"></ion-img>
+      <p style="font-size: medium;">&nbsp;&nbsp;Tomar fotografia</p>
+    </ion-button>
+  </ion-item>
+  <br><br><br><br>
+    <ion-item routerLink="/add-productos">
+      <ion-button  expand="block" fill="clear" style="width: 100%;">
+        <ion-img src="../../assets/agregar.png" alt="logo" style="width:64px;"></ion-img>
+        
+        <p style="font-size: medium;">&nbsp;&nbsp;Añadir Memorial</p>
+      </ion-button>
+    </ion-item>
+
+    <ion-item routerLink="/lista-productos">
+      <ion-button  expand="block" fill="clear" style="width: 100%;">
+        <ion-img src="../../assets/memoriales.png" alt="logo" style="width:64px;"></ion-img>
+        
+        <p style="font-size: medium;">&nbsp;&nbsp;Listar Memoriales creados</p>
+      </ion-button>
+    </ion-item>
+
+
+
+    <br><br><br><br>
+    <ion-item routerLink="/login">
+      <ion-button color="danger"  expand="full" fill="solid" size="large" style="width: 100%;">
+        Salir
+      </ion-button>
+    </ion-item>
+
+</ion-content>
